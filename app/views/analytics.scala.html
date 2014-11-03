@@ -1,0 +1,33 @@
+@(parameters: scala.collection.Map[String, Option[String]], payments:scala.collection.Iterator[payment.Payment])
+@main("Payment Analytics for @payment.recipient") {
+<style>
+table, td, th
+{
+border:1px solid green;
+}
+th
+{
+background-color:green;
+color:white;
+}
+</style>
+<form method="POST">
+	<div class="analyticsForm">
+		Recipient <input type="text" name="recipient" value="@parameters("recipient")"/>
+	    E-wallet Option <select name="ewalletOption">
+	    	@for(option <- payment.EwalletOption.values) {
+	    		<option value="@option">@option </option>
+	    	}
+	    </select>
+	    <br/> 
+	    <input type="submit">
+	</div>
+</form>
+<table >
+	    <tr><td>Id</td><td>Option</td><td>Sender</td><td>Recipient</td><td>Timestamp</td><td>Amount</td><td>Currency</td></tr>
+		@for(payment <- payments) {
+		<tr><td>@payment.id</td><td>@payment.ewalletOption</td><td>@payment.sender</td><td>@payment.recipient</td><td>@payment.timestamp</td><td>@payment.amount</td><td>@payment.currency</td></tr>
+		}
+</table>
+		
+}

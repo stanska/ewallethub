@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20111026</FitNesseVersion>
+  <rootPath>TestTest</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>20</exceptions>
+    </counts>
+    <runTimeInMillis>157</runTimeInMillis>
+    <content><![CDATA[<div class="collapse_rim">
+	<div style="float: right;" class="meta">
+		<a href="javascript:expandAll();">Expand All</a>
+ | 
+		<a href="javascript:collapseAll();">Collapse All</a>
+	</div>
+	<a href="javascript:toggleCollapsable('31');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img31"/>
+	</a>
+&nbsp;
+	<span class="meta">Precompiled Libraries</span>
+	<div class="hidden" id="31"><br/></div>
+</div>
+<div class="toc1">
+	<div class="contents">
+		<b>Contents:</b>
+		<ul/>
+	</div>
+</div>
+<br/><span class="meta">variable defined: TEST_SYSTEM=slim</span>
+<br/><span class="meta">classpath: C:/Users/stankadalekova/.sbt/scala-2.10.1/lib/scala-library.jar</span><br/><span class="meta">classpath: D:/dev/skrillplatform/fitlibrary.jar</span><br/><span class="meta">classpath: C:\Users\stankadalekova\ewallethub\.target</span><br/><table border="1" cellspacing="0" _TABLENUMBER=6019060555263954424>
+	<tr>
+		<td>import</td>
+	</tr>
+	<tr>
+		<td>fitnesse</td>
+	</tr>
+	<tr>
+		<td>notification</td>
+	</tr>
+</table>
+<br/><br/>This page demonstrates how SKRILL payment notification works.<br/>For any scenario row, there is a brand new payment created.<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=4544618189840801083>
+	<tr>
+		<td colspan="6"><span class="pass">NotificationFixture</span></td>
+	</tr>
+	<tr>
+		<td>integrator status url</td>
+		<td>payment reference</td>
+		<td>status notification</td>
+		<td>response?</td>
+		<td>stored notification?</td>
+		<td>integrator notification response?</td>
+	</tr>
+	<tr>
+		<td>http://asdasd.com</td>
+		<td>ref1 <span class="error">Method setPaymentReference[1] not found in notification.NotificationFixture.</span></td>
+		<td>TEMPORARY <span class="error">Method setStatusNotification[1] not found in notification.NotificationFixture.</span></td>
+		<td> <span class="error">Method response[0] not found in notification.NotificationFixture.</span></td>
+		<td> <span class="error">Method storedNotification[0] not found in notification.NotificationFixture.</span></td>
+		<td> <span class="error">Method integratorNotificationResponse[0] not found in notification.NotificationFixture.</span></td>
+	</tr>
+	<tr>
+		<td>http://abv.bg</td>
+		<td>ref1 <span class="error">Method setPaymentReference[1] not found in notification.NotificationFixture.</span></td>
+		<td>TEMPORARY <span class="error">Method setStatusNotification[1] not found in notification.NotificationFixture.</span></td>
+		<td> <span class="error">Method response[0] not found in notification.NotificationFixture.</span></td>
+		<td> <span class="error">Method storedNotification[0] not found in notification.NotificationFixture.</span></td>
+		<td> <span class="error">Method integratorNotificationResponse[0] not found in notification.NotificationFixture.</span></td>
+	</tr>
+</table>
+<br/><br/><br/><table border="1" cellspacing="0" _TABLENUMBER=3003113937935178654>
+	<tr>
+		<td colspan="4">comment</td>
+	</tr>
+	<tr>
+		<td>script</td>
+		<td colspan="3">ScalaFitnesseFixture</td>
+	</tr>
+	<tr>
+		<td>new payment for amount</td>
+		<td>200000</td>
+		<td>and notification parameters</td>
+		<td>3000</td>
+	</tr>
+</table>
+]]></content>
+    <relativePageName>TestTest</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[notification]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(NotificationFixture)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[integrator status url]]></col>
+                    <col><![CDATA[payment reference]]></col>
+                    <col><![CDATA[status notification]]></col>
+                    <col><![CDATA[response?]]></col>
+                    <col><![CDATA[stored notification?]]></col>
+                    <col><![CDATA[integrator notification response?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[http://asdasd.com]]></col>
+                    <col><![CDATA[ref1 error(Method setPaymentReference[1] not found in notification.NotificationFixture.)]]></col>
+                    <col><![CDATA[TEMPORARY error(Method setStatusNotification[1] not found in notification.NotificationFixture.)]]></col>
+                    <col><![CDATA[ error(Method response[0] not found in notification.NotificationFixture.)]]></col>
+                    <col><![CDATA[ error(Method storedNotification[0] not found in notification.NotificationFixture.)]]></col>
+                    <col><![CDATA[ error(Method integratorNotificationResponse[0] not found in notification.NotificationFixture.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[http://abv.bg]]></col>
+                    <col><![CDATA[ref1 error(Method setPaymentReference[1] not found in notification.NotificationFixture.)]]></col>
+                    <col><![CDATA[TEMPORARY error(Method setStatusNotification[1] not found in notification.NotificationFixture.)]]></col>
+                    <col><![CDATA[ error(Method response[0] not found in notification.NotificationFixture.)]]></col>
+                    <col><![CDATA[ error(Method storedNotification[0] not found in notification.NotificationFixture.)]]></col>
+                    <col><![CDATA[ error(Method integratorNotificationResponse[0] not found in notification.NotificationFixture.)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_1, import, notification]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, NotificationFixture]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[NotificationFixture]]></expected>
+                              <evaluationMessage><![CDATA[pass(NotificationFixture)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, [[integrator status url, payment reference, status notification, response?, stored notification?, integrator notification response?], [http://asdasd.com, ref1, TEMPORARY, , , ], [http://abv.bg, ref1, TEMPORARY, , , ]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] notification.NotificationFixture.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:27)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:179)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:104)
+	at fitnesse.slim.Statement.call(Statement.java:97)
+	at fitnesse.slim.Statement.execute(Statement.java:77)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:81)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:73)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:57)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:43)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:662)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_2, call, decisionTable_1, beginTable]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS beginTable[0] notification.NotificationFixture.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:27)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:179)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:104)
+	at fitnesse.slim.Statement.call(Statement.java:97)
+	at fitnesse.slim.Statement.execute(Statement.java:77)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:81)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:73)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:57)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:43)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:662)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_3, call, decisionTable_1, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] notification.NotificationFixture.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:27)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:179)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:104)
+	at fitnesse.slim.Statement.call(Statement.java:97)
+	at fitnesse.slim.Statement.execute(Statement.java:77)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:81)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:73)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:57)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:43)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:662)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_4, call, decisionTable_1, setIntegratorStatusUrl, http://asdasd.com]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_4</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[http://asdasd.com]]></expected>
+                              <evaluationMessage><![CDATA[http://asdasd.com]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_5, call, decisionTable_1, setPaymentReference, ref1]]]></instruction>
+        <slimResult><![CDATA[!error:Method setPaymentReference[1] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_5</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setPaymentReference[1] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[ref1]]></expected>
+                              <evaluationMessage><![CDATA[ref1 error(Method setPaymentReference[1] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_6, call, decisionTable_1, setStatusNotification, TEMPORARY]]]></instruction>
+        <slimResult><![CDATA[!error:Method setStatusNotification[1] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setStatusNotification[1] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[TEMPORARY]]></expected>
+                              <evaluationMessage><![CDATA[TEMPORARY error(Method setStatusNotification[1] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_7, call, decisionTable_1, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] notification.NotificationFixture.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:27)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:179)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:104)
+	at fitnesse.slim.Statement.call(Statement.java:97)
+	at fitnesse.slim.Statement.execute(Statement.java:77)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:81)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:73)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:57)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:43)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:662)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_8, call, decisionTable_1, response]]]></instruction>
+        <slimResult><![CDATA[!error:Method response[0] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_8</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[!error:Method response[0] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ error(Method response[0] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_9, call, decisionTable_1, storedNotification]]]></instruction>
+        <slimResult><![CDATA[!error:Method storedNotification[0] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_9</instructionId>
+          <col>4</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[!error:Method storedNotification[0] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ error(Method storedNotification[0] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_10, call, decisionTable_1, integratorNotificationResponse]]]></instruction>
+        <slimResult><![CDATA[!error:Method integratorNotificationResponse[0] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_10</instructionId>
+          <col>5</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[!error:Method integratorNotificationResponse[0] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ error(Method integratorNotificationResponse[0] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_11, call, decisionTable_1, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] notification.NotificationFixture.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:27)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:179)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:104)
+	at fitnesse.slim.Statement.call(Statement.java:97)
+	at fitnesse.slim.Statement.execute(Statement.java:77)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:81)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:73)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:57)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:43)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:662)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_12, call, decisionTable_1, setIntegratorStatusUrl, http://abv.bg]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_12</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[http://abv.bg]]></expected>
+                              <evaluationMessage><![CDATA[http://abv.bg]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_13, call, decisionTable_1, setPaymentReference, ref1]]]></instruction>
+        <slimResult><![CDATA[!error:Method setPaymentReference[1] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_13</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setPaymentReference[1] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[ref1]]></expected>
+                              <evaluationMessage><![CDATA[ref1 error(Method setPaymentReference[1] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_14, call, decisionTable_1, setStatusNotification, TEMPORARY]]]></instruction>
+        <slimResult><![CDATA[!error:Method setStatusNotification[1] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_14</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setStatusNotification[1] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[TEMPORARY]]></expected>
+                              <evaluationMessage><![CDATA[TEMPORARY error(Method setStatusNotification[1] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_15, call, decisionTable_1, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] notification.NotificationFixture.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:27)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:179)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:104)
+	at fitnesse.slim.Statement.call(Statement.java:97)
+	at fitnesse.slim.Statement.execute(Statement.java:77)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:81)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:73)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:57)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:43)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:662)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_16, call, decisionTable_1, response]]]></instruction>
+        <slimResult><![CDATA[!error:Method response[0] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_16</instructionId>
+          <col>3</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[!error:Method response[0] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ error(Method response[0] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_17, call, decisionTable_1, storedNotification]]]></instruction>
+        <slimResult><![CDATA[!error:Method storedNotification[0] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_17</instructionId>
+          <col>4</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[!error:Method storedNotification[0] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ error(Method storedNotification[0] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_18, call, decisionTable_1, integratorNotificationResponse]]]></instruction>
+        <slimResult><![CDATA[!error:Method integratorNotificationResponse[0] not found in notification.NotificationFixture.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_18</instructionId>
+          <col>5</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[!error:Method integratorNotificationResponse[0] not found in notification.NotificationFixture.]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ error(Method integratorNotificationResponse[0] not found in notification.NotificationFixture.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_19, call, decisionTable_1, endTable]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS endTable[0] notification.NotificationFixture.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:27)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:179)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:104)
+	at fitnesse.slim.Statement.call(Statement.java:97)
+	at fitnesse.slim.Statement.execute(Statement.java:77)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:81)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:73)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:57)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:43)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:662)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

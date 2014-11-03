@@ -1,0 +1,12 @@
+@(url: String, parametsers: scala.collection.immutable.Map[String, Seq[String]])
+
+@main("Redirecting....") {
+	<FORM action="@url" method="POST" name="postPayment">
+		@for(param <- parametsers) {
+			<input type="hidden" name="@param._1" value="@param._2">
+		}
+	</form>
+    <script language="javascript">
+       document.forms["postPayment"].submit();
+    </script>
+}

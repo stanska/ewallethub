@@ -1,0 +1,89 @@
+AMOUNT:
+db.parameters.insert(
+{
+   "amount":{
+      "paypal":{
+         "name":"amount",
+         "required":true
+      },
+      "skrill":{
+         "name":"amount",
+         "required":true,
+         "maxCharecters":19,
+         "minValue":0.01
+      },
+      "neteller":{
+         "name":"amount",
+         "required":true,
+         "maxCharecters":10,
+         "minValue":1
+      }
+   },
+   "type":"number",
+   "required":true
+});
+CURRENCY - currency ranges?
+db.parameters.insert(
+{
+   "currency":{
+      "paypal":{
+         "name":"currency_code",
+         "required":false,
+		 "default":"USD",
+		 "minCharacters":3,
+		 "maxCharacters":3
+      },
+      "skrill":{
+         "name":"currency",
+         "required":true,
+		 "minCharacters":3,
+		 "maxCharacters":3
+		 },
+      "neteller":{
+         "name":"currency", 
+         "required":true,
+         "minCharacters":3,
+		 "maxCharacters":3
+      }
+   },
+   "type":"text",
+   "required":true
+});
+
+RECIPIENT ??  do we need clients document - unique client id in our site wiht corresponding paypall, skrill and neteller data in order to sell this???
+
+db.parameters.insert(
+{
+   "recipient":{
+      "paypal":{
+         "name":"business",
+         "required":true
+      },
+      "skrill":{
+         "name":"pay_to_email",
+         "required":true,
+		 "maxCharacters":50
+		 }
+   },
+   "type":"email",
+   "required":true
+});
+
+SENDER 
+db.parameters.insert(
+{
+   "sender":{
+      "paypal":{
+         "name":"email",
+         "required":false,
+		 "maxCharacters":127
+      },
+      "skrill":{
+         "name":"pay_from_email",
+         "required":false,
+		 "maxCharacters":100
+		 }
+   },
+   "type":"email",
+   "required":false
+});

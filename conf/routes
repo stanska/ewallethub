@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+POST   /payment            payment.PaymentController.add
+GET    /payment            payment.PaymentController.add
+POST   /test               controllers.TestController.test
+GET    /test               controllers.TestController.test
+GET    /testIntegration    controllers.TestIntegrationController.test
+POST   /notification       notification.NotificationController.add
+GET    /notification       notification.NotificationController.add
+GET    /analytics          analytics.AnalyticsController.get
+POST   /cart               cart.CartController.newCart
+#GET    /cart/:cartId       cart.CartController.showCart(cartId:Long)
+#POST   /cart/:cartId       cart.CartController.addItem(cartId:Long)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET    /assets/*file       controllers.Assets.at(path="/public", file)
+#GET    /webjars/*file      controllers.WebJarAssets.at(file)

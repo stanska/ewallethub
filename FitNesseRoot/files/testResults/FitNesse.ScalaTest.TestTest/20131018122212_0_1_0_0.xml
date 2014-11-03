@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20111026</FitNesseVersion>
+  <rootPath>TestTest</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12</runTimeInMillis>
+    <content><![CDATA[<div class="collapse_rim">
+	<div style="float: right;" class="meta">
+		<a href="javascript:expandAll();">Expand All</a>
+ | 
+		<a href="javascript:collapseAll();">Collapse All</a>
+	</div>
+	<a href="javascript:toggleCollapsable('7');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7"/>
+	</a>
+&nbsp;
+	<span class="meta">Precompiled Libraries</span>
+	<div class="hidden" id="7"><br/></div>
+</div>
+<div class="toc1">
+	<div class="contents">
+		<b>Contents:</b>
+		<ul/>
+	</div>
+</div>
+<br/><span class="meta">variable defined: TEST_SYSTEM=slim</span>
+<br/><span class="meta">classpath: C:/Users/stankadalekova/.sbt/scala-2.10.1/lib/scala-library.jar</span><br/><span class="meta">classpath: D:/dev/skrillplatform/fitlibrary.jar</span><br/><span class="meta">classpath: C:\Users\stankadalekova\ewallethub\target\scala-2.10\classes</span><br/><table border="1" cellspacing="0" _TABLENUMBER=6251933612150457808>
+	<tr>
+		<td>import</td>
+	</tr>
+	<tr>
+		<td>fitnesse</td>
+	</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2021903802550128107>
+	<tr>
+		<td colspan="4"><span class="fail">ScalaFitnesseFixture<a title="create page" href="FitNesse.ScalaTest.ScalaFitnesseFixture?edit&nonExistent=true">[?]</a>: Bad table: <br/><pre>fitnesse.slimTables.SlimTable$SyntaxError: DecisionTables should have at least three rows.
+	at fitnesse.slimTables.DecisionTable.appendInstructions(DecisionTable.java:23)
+	at fitnesse.slimTables.SlimTable.appendInstructions(SlimTable.java:87)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.createInstructions(SlimTestSystem.java:314)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processTablesAndGetHtml(SlimTestSystem.java:296)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processAllTablesOnPage(SlimTestSystem.java:283)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.runTestsAndGenerateHtml(SlimTestSystem.java:227)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestSystemPages(MultipleTestsRunner.java:140)
+	at fitnesse.responders.run.MultipleTestsRunner.startTestSystemAndExecutePages(MultipleTestsRunner.java:120)
+	at fitnesse.responders.run.MultipleTestsRunner.executePagesInTestSystem(MultipleTestsRunner.java:106)
+	at fitnesse.responders.run.MultipleTestsRunner.internalExecuteTestPages(MultipleTestsRunner.java:86)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestPages(MultipleTestsRunner.java:58)
+	at fitnesse.responders.run.TestResponder.performExecution(TestResponder.java:145)
+	at fitnesse.responders.run.TestResponder.doSending(TestResponder.java:45)
+	at fitnesse.responders.ChunkingResponder.startSending(ChunkingResponder.java:67)
+	at fitnesse.responders.ChunkingResponder.access$000(ChunkingResponder.java:17)
+	at fitnesse.responders.ChunkingResponder$RespondingRunnable.run(ChunkingResponder.java:106)
+	at java.lang.Thread.run(Thread.java:662)
+</pre></span></td>
+	</tr>
+	<tr>
+		<td>the tax for annual income</td>
+		<td>200000</td>
+		<td>is</td>
+		<td>3000</td>
+	</tr>
+</table>
+]]></content>
+    <relativePageName>TestTest</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[<span class="fail">ScalaFitnesseFixture<a title="create page" href="FitNesse.ScalaTest.ScalaFitnesseFixture?edit&nonExistent=true">[?]</a>: Bad table: <br/><pre>fitnesse.slimTables.SlimTable$SyntaxError: DecisionTables should have at least three rows.
+	at fitnesse.slimTables.DecisionTable.appendInstructions(DecisionTable.java:23)
+	at fitnesse.slimTables.SlimTable.appendInstructions(SlimTable.java:87)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.createInstructions(SlimTestSystem.java:314)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processTablesAndGetHtml(SlimTestSystem.java:296)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processAllTablesOnPage(SlimTestSystem.java:283)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.runTestsAndGenerateHtml(SlimTestSystem.java:227)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestSystemPages(MultipleTestsRunner.java:140)
+	at fitnesse.responders.run.MultipleTestsRunner.startTestSystemAndExecutePages(MultipleTestsRunner.java:120)
+	at fitnesse.responders.run.MultipleTestsRunner.executePagesInTestSystem(MultipleTestsRunner.java:106)
+	at fitnesse.responders.run.MultipleTestsRunner.internalExecuteTestPages(MultipleTestsRunner.java:86)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestPages(MultipleTestsRunner.java:58)
+	at fitnesse.responders.run.TestResponder.performExecution(TestResponder.java:145)
+	at fitnesse.responders.run.TestResponder.doSending(TestResponder.java:45)
+	at fitnesse.responders.ChunkingResponder.startSending(ChunkingResponder.java:67)
+	at fitnesse.responders.ChunkingResponder.access$000(ChunkingResponder.java:17)
+	at fitnesse.responders.ChunkingResponder$RespondingRunnable.run(ChunkingResponder.java:106)
+	at java.lang.Thread.run(Thread.java:662)
+</pre></span>]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[the tax for annual income]]></col>
+                    <col><![CDATA[200000]]></col>
+                    <col><![CDATA[is]]></col>
+                    <col><![CDATA[3000]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

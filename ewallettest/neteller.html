@@ -1,0 +1,111 @@
+<html><body>
+
+Netteller:<br/><br>
+<table>
+<tr><td>version</td><td>required</td><td> 
+The NETELLER Direct API version that you are POSTING the form to. Set the value to “4.1”. 
+</td></tr>
+<tr><td>amount</td><td>required</td><td> 
+The amount the member is sending from their NETELLER account to their merchant account. The amount 
+must be greater than 1 USD, 1 CAD, 1 GBP, 1 EUR, or 1 SEK, can have decimal places but no currency 
+symbols, and can be up to 10 characters in length. 
+</td></tr>
+<tr><td>merchant_id</td><td>required</td><td> 
+The Merchant ID you were assigned when your NETELLER merchant account was created
+</td></tr>
+<tr><td>merch_key</td><td>required</td><td> 
+The Merchant Key you were assigned when your NETELLER merchant account was created. 
+</td></tr>
+<tr><td>net_account</td><td>required</td><td> 
+The member’s 12-digit Account ID that was assigned when they created their NETELLER account. 
+</td></tr>
+<tr><td>secure_id</td><td>required</td><td> 
+The member’s 6-digit Secure ID that was assigned when they created their NETELLER account. 
+</td></tr>
+<tr><td>merch_transid</td><td>required</td><td>
+A merchant-assigned identification code. The transaction ID will be recorded in our database along with the 
+transaction for identification purposes. The merch_transid ID can have letters or numbers and can be up to 50 
+characters in length. 
+The merch_transid must be unique for each transaction and each retry, and cannot have been used with the 
+Instant Payouts API or you will not be able to check the status of the transaction with the Check Transaction 
+Status API. 
+</td></tr>
+<tr><td>currency</td><td>required</td><td>
+The 3-letter currency code associated with the transaction. NETELLER only processes requests in our 6 
+supported currencies: USD, CAD, GBP, EUR, RMB and SEK. 
+</td></tr>
+<tr><td>language_code</td><td>optional</td><td>
+The 2-letter language code that indicates the member’s language preference. Please note that NETELLER 
+supports English (EN), simplified Chinese (ZH), Danish (DA), French (FR), German (DE), Italian (IT), 
+Japanese (JA), Polish (PL), Portuguese (Brazil) (PT), Spanish (ES), Swedish (SV), and Turkish (TR). If a 
+language is not specified and a transaction results in an error, the error message will be returned in English. 
+</td></tr>
+<tr><td>bank_acct_num</td><td>optional</td><td>
+The last 4 digits of the bank account registered with the member’s NETELLER account. Include this variable if 
+you offer Direct Accept on your site. 
+</td></tr>
+<tr><td>merch_name</td><td>optional</td><td>
+The name of the merchant site where the member is transacting. This optional variable can be up to 50 
+characters in length and will support language encodings. If provided, this variable will be displayed on the 
+error resolution pages. See section 6.0 for more information about NETELLER Direct errors and error 
+resolution pages. 
+</td></tr>
+<tr><td>merch_account</td><td>optional</td><td>
+This optional variable can be used to include information that will be echoed back to you in the “Account” 
+column of the transfers table in your merchant account. You can use this to assist in reconciling your
+transactions (e.g. a member’s account identification on your site, your site’s transaction ID, etc.). You can send 
+up to 50 characters for this variable. 
+</td></tr>
+<tr><td>custom_1</td><td>optional</td><td>
+An optional parameter that can be sent for any variable you need to add. This variable is echoed back to you. 
+This variable can be up to 50 characters in length.
+</td></tr>
+<tr><td>custom_2</td><td>optional</td><td>
+An optional parameter that can be sent for any variable you need to add. This variable is echoed back to you. 
+This variable can be up to 50 characters in length.
+</td></tr>
+<tr><td>custom_3</td><td>optional</td><td>
+An optional parameter that can be sent for any variable you need to add. This variable is echoed back to you. 
+This variable can be up to 50 characters in length.
+</td></tr>
+<tr><td>test</td><td>optional</td><td>
+An optional parameter that designates whether or not the transaction is a test. A value of “1” designates a test 
+transaction and a value of “0” designates a live transaction. Testing can only occur with the member account 
+details listed in Section 3.2.4 of this document. If you do not include this parameter, the request will be 
+processed as a live transaction. 
+</td></tr>
+<tr><td>error</td><td>optional</td><td>
+An optional parameter used during testing to simulate an error. Make this attribute equal to the error code you 
+want returned. 
+</td></tr>
+<tr><td>encoding</td><td>optional</td><td>
+An optional parameter you can use to designate the encoding for NETELLER’s xml response. NETELLER 
+supports UTF-8 and ISO-8859-1. If you do not include this variable or if you designate an unsupported 
+encoding type, NETELLER will, by defaultt, encode the response as UTF-8.
+</td></tr>
+</table>
+<br><br>
+File Example 
+Below is an example of what a form should look like: 
+<pre>
+
+<form method="post" Action="https://api.neteller.com/netdirect"> 
+<input type="text" name="version" value="4.1"> 
+<input type="text" name="test" value="1"> 
+<input type="text" name="amount" value="10" size="10" maxlength="10"> 
+<input type="text" name="currency" value="EUR" maxlength="3"> 
+<input type="text" name="net_account" value="456115522530" maxlength="12"> 
+<input type="text" name="secure_id" value="362626" maxlength="6"> 
+<input type="text" name="merchant_id" value="362626"> 
+<input type="text" name="merch_key" value="6789"> 
+<!--<input type="text" name="bank_acct_num" value="6789" maxlength="4"> 
+<input type="text" name="merch_transid" value="12312" maxlength="50"> 
+<input type="text" name="language_code" value="EN"> 
+<input type="text" name="merch_name" value="NETELLER Merchant"> 
+<input type="text" name="merch_account" value="john123" maxlength="50"> 
+<input type="text" name="custom_1" value="test123" maxlength="50"> 
+<input type="text" name="custom_2" value="test123" maxlength="50"> 
+<input type="text" name="custom_3" value="test123" maxlength="50"> -->
+<input type="submit" name="button" value="Make Transfer"> 
+</form></pre> 
+</body></html>

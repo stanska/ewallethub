@@ -1,0 +1,49 @@
+@(host: String)
+
+@main("Test Html Integration") {
+	<FORM action="http://@host/payment" method="GET" name="postPayment">
+	<table>
+		<tr>
+			<td>ewallet</td>
+			<td>
+				<select name="ewallet">
+					<option name="skrill">skrill</option>
+					<option name="paypal">paypal</option>
+				</select>
+			</td>
+		</tr>	
+		<tr>
+			<td>amount</td>
+			<td><input type="text" name="amount" value="1"/></td>
+		</tr>	
+		<tr>
+			<td>currency</td>
+			<td><input type="text" name="currency" value="USD"/></td>
+		</tr>
+		<tr>
+			<td>sender</td>
+			<td><input type="text" name="sender" value="borko@@gmail.com"/></td>
+		</tr>
+		<tr>
+			<td>reference</td>
+			<td><input type="text" name="reference" value="merchant ref"/></td>
+		</tr>
+		<tr>
+			<td>recipient</td>
+			<td><input type="text" name="recipient" value="stanska@@gmail.com"/></td>
+		</tr>
+		<tr>
+			<td>status_url</td>
+			<td><input type="text" name="statusUrl" value="http://@host/test"/></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit"/></td>
+		</tr>	
+	</table>
+	</form>
+	<b>TODO</b>:<br/>
+	1)Change form method, currently GET and POST is still not supported<br/>
+	2)show payment stats<br/>
+	3)megalan outgoing ip<br/>
+	4)add more paramters and methods<br/>
+}

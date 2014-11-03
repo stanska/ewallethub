@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20111026</FitNesseVersion>
+  <rootPath>TestTest</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>73</runTimeInMillis>
+    <content><![CDATA[<div class="collapse_rim">
+	<div style="float: right;" class="meta">
+		<a href="javascript:expandAll();">Expand All</a>
+ | 
+		<a href="javascript:collapseAll();">Collapse All</a>
+	</div>
+	<a href="javascript:toggleCollapsable('16');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img16"/>
+	</a>
+&nbsp;
+	<span class="meta">Precompiled Libraries</span>
+	<div class="hidden" id="16"><br/></div>
+</div>
+<div class="toc1">
+	<div class="contents">
+		<b>Contents:</b>
+		<ul/>
+	</div>
+</div>
+<br/><span class="meta">variable defined: TEST_SYSTEM=slim</span>
+<br/><span class="meta">classpath: C:/Users/stankadalekova/.sbt/scala-2.10.1/lib/scala-library.jar</span><br/><span class="meta">classpath: D:/dev/skrillplatform/fitlibrary.jar</span><br/><span class="meta">classpath: C:\Users\stankadalekova\ewallethub\.target</span><br/><table border="1" cellspacing="0" _TABLENUMBER=4843934240796239647>
+	<tr>
+		<td>import</td>
+	</tr>
+	<tr>
+		<td>fitnesse</td>
+	</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=944453746298365607>
+	<tr>
+		<td>script</td>
+		<td colspan="3"><span class="pass">ScalaFitnesseFixture</span></td>
+	</tr>
+	<tr>
+		<td><span class="fail">the tax for annual income</span></td>
+		<td>200000</td>
+		<td>is</td>
+		<td>3000</td>
+	</tr>
+</table>
+]]></content>
+    <relativePageName>TestTest</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_1</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(ScalaFitnesseFixture)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fail(the tax for annual income)]]></col>
+                    <col><![CDATA[200000]]></col>
+                    <col><![CDATA[is]]></col>
+                    <col><![CDATA[3000]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_0, make, scriptTableActor, ScalaFitnesseFixture]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_1_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[ScalaFitnesseFixture]]></expected>
+                              <evaluationMessage><![CDATA[pass(ScalaFitnesseFixture)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_1, call, scriptTableActor, theTaxForAnnualIncomeIs, 200000, 3000]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[the tax for annual income]]></expected>
+                              <evaluationMessage><![CDATA[fail(the tax for annual income)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

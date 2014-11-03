@@ -1,0 +1,5 @@
+//scenarios
+//1 - when error url, log a message
+//2 - when failure message, log a message and reschedule
+//3 - when success, log a message and don't reschedule
+class NotificatorTest extends Testit
